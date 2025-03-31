@@ -46,6 +46,10 @@
             background-color: rgb(246, 76, 105);
             padding: 10px;
         }
+        .back{
+            background-color: rgb(122, 193, 244);
+            padding: 10px;
+        }
 
     </style>
 </head>
@@ -56,6 +60,7 @@
         <div class="button">
             <button type="button" class="btn chocolate" onclick="chocolate()">chocolate</button>
             <button type="button" class="btn strawberry" onclick="strawberry()" >strawberry</button>
+            <button type="button" class="btn back " onclick="back()">back</button>
         </div>
     </div>
     <script>
@@ -68,6 +73,10 @@
         function strawberry(){
             flavorsElement.src="img/strawberry.jpg";
             bodyElement.style.backgroundColor="rgb(254, 174, 188)";
+        }
+        function back(){
+            flavorsElement.src="img/first.jpg";
+            bodyElement.style.backgroundColor="rgba(255, 253, 229, 0.297)";
         }
     </script>
 </body>
