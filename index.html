@@ -51,9 +51,18 @@
         <h2 class="heading">Ice-cream flavors</h2>
         <img src="img/first.jpg" id="flavors" class="img1">
         <div class="button">
-            <button type="button" class="btn chocolate" >chocolate</button>
-            <button type="button" class="btn strawberry " >strawberry</button>
+            <button type="button" class="btn chocolate" onclick="chocolate()">chocolate</button>
+            <button type="button" class="btn strawberry" onclick="strawberry()" >strawberry</button>
         </div>
     </div>
+    <script>
+        const flavorsElement=document.getElementById("flavors");
+        function chocolate(){
+            flavorsElement.src="img/chocolate.jpg";
+        }
+        function strawberry(){
+            flavorsElement.src="img/strawberry.jpg";
+        }
+    </script>
 </body>
 </html>
